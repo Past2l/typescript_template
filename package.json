@@ -1,0 +1,32 @@
+{
+  "name": "typescript_template",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "dotenv -e .env -- node .",
+    "dev": "dotenv -e .env -- tsc-watch --onSuccess \"node .\"",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "build": "tsc",
+    "clean": "rimraf dist"
+  },
+  "author": "Dohyeon Yun",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/eslint": "^8.4.10",
+    "@types/eslint-plugin-prettier": "^3.1.0",
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
+    "@typescript-eslint/parser": "^5.48.1",
+    "eslint": "^8.32.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.3",
+    "tsc-watch": "^6.0.0",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "dotenv-cli": "^6.0.0",
+    "rimraf": "^4.0.7"
+  }
+}
